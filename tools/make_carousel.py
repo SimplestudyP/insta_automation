@@ -101,7 +101,8 @@ def scene(p):
 
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SERIF_I = os.path.join(HERE, "fonts", "InstrumentSerif-Italic.ttf")
+SERIF_I = os.path.join(HERE, "fonts", "GreatVibes-Regular.ttf")   # calligraphy for emphasis words
+FOOT_F = os.path.join(HERE, "fonts", "Allura-Regular.ttf")        # calligraphy for footer
 SERIF_R = os.path.join(HERE, "fonts", "InstrumentSerif-Regular.ttf")
 SIZES = {"s": 70, "m": 82, "l": 96, "xl": 112}
 
@@ -133,12 +134,12 @@ def tokenize(text):
 def layout(draw, toks, base, maxw, accent):
     """Return lines of (word, font, colour, emphasised). Emphasis words use elegant italic serif, larger."""
     sans = ImageFont.truetype(FONT_B, base)
-    serif = ImageFont.truetype(SERIF_I, int(base * 1.5))
+    serif = ImageFont.truetype(SERIF_I, int(base * 1.85))
     lines, cur, curw = [], [], 0
     space = draw.textlength(" ", font=sans)
     for w, em in toks:
         f = serif if em else sans
-        wl = draw.textlength(w, font=f)
+        wl = draw.textlength(w, font=f) + (26 if em else 0)
         if cur and curw + space + wl > maxw:
             lines.append(cur)
             cur, curw = [], 0
@@ -163,19 +164,25 @@ def slide(idx, total, text, accent, handle, size="m", last=False):
     sans = ImageFont.truetype(FONT_B, base)
     space = d.textlength(" ", font=sans)
     y = 120 + base  # baseline of first line
-    for ln in lines:
+    for li, ln in enumerate(lines):
+        has_em = any(t[3] for t in ln)
+        if has_em:
+            y += int(base * (0.55 if li == 0 else 0.42))   # room for tall calligraphy ascenders
         x = 90
         for w, f, col, em in ln:
+            if em:
+                x += 13
             d.text((x, y), w, font=f, fill=col, anchor="ls")
-            x += d.textlength(w, font=f) + space
-        y += int(base * 1.32)
-    sf = ImageFont.truetype(FONT_B, 30)
-    d.text((90, H - 90), "THE INNER COMMUNITY", font=sf, fill=(235, 235, 235))
-    d.line([(90, H - 100), (330, H - 100)], fill=RED, width=3)
-    if not last:
-        d.text((W - 90 - d.textlength("SWIPE", font=sf), H - 90), "SWIPE", font=sf, fill=(235, 235, 235))
+            x += d.textlength(w, font=f) + space + (13 if em else 0)
+        y += int(base * 1.32) + (int(base * 0.30) if has_em else 0)
+    sf = ImageFont.truetype(FOOT_F, 66)
+    if last:
+        d.text((90, H - 74), "@" + handle.lower(), font=sf, fill=(235, 235, 235), anchor="ls")
+        d.line([(90, H - 56), (560, H - 56)], fill=RED, width=3)
     else:
-        d.text((W - 90 - d.textlength("@" + handle, font=sf), H - 90), "@" + handle, font=sf, fill=(235, 235, 235))
+        d.text((90, H - 74), "the inner community", font=sf, fill=(235, 235, 235), anchor="ls")
+        d.line([(90, H - 56), (480, H - 56)], fill=RED, width=3)
+        d.text((W - 90, H - 74), "swipe", font=sf, fill=(235, 235, 235), anchor="rs")
     return img
 
 
