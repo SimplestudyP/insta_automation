@@ -100,41 +100,75 @@ def scene(p):
     return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
 
 
-def wrap(draw, text, font, maxw):
-    words, lines, cur = text.split(), [], ""
-    for w in words:
-        t = (cur + " " + w).strip()
-        if draw.textlength(t, font=font) <= maxw:
-            cur = t
+HERE = os.path.dirname(os.path.abspath(__file__))
+SERIF_I = os.path.join(HERE, "fonts", "InstrumentSerif-Italic.ttf")
+SERIF_R = os.path.join(HERE, "fonts", "InstrumentSerif-Regular.ttf")
+SIZES = {"s": 70, "m": 82, "l": 96, "xl": 112}
+
+
+def tokenize(text):
+    """Split text into (word, emphasised) tokens. Emphasis = [[word or phrase]]."""
+    toks, i, emph = [], 0, False
+    buf = ""
+    while i < len(text):
+        if text.startswith("[[", i):
+            if buf.strip():
+                toks += [(w, emph) for w in buf.split()]
+            buf, emph, i = "", True, i + 2
+        elif text.startswith("]]", i):
+            if buf.strip():
+                toks += [(w, emph) for w in buf.split()]
+            buf, emph, i = "", False, i + 2
+            while i < len(text) and text[i] in ".,!?;:" and toks:   # keep punctuation glued to the emphasised word
+                toks[-1] = (toks[-1][0] + text[i], toks[-1][1])
+                i += 1
         else:
+            buf += text[i]
+            i += 1
+    if buf.strip():
+        toks += [(w, emph) for w in buf.split()]
+    return toks
+
+
+def layout(draw, toks, base, maxw, accent):
+    """Return lines of (word, font, colour, emphasised). Emphasis words use elegant italic serif, larger."""
+    sans = ImageFont.truetype(FONT_B, base)
+    serif = ImageFont.truetype(SERIF_I, int(base * 1.5))
+    lines, cur, curw = [], [], 0
+    space = draw.textlength(" ", font=sans)
+    for w, em in toks:
+        f = serif if em else sans
+        wl = draw.textlength(w, font=f)
+        if cur and curw + space + wl > maxw:
             lines.append(cur)
-            cur = w
+            cur, curw = [], 0
+        col = RED if (w.strip(".,!?").lower() in accent) else (245, 245, 245)
+        cur.append((w, f, col, em))
+        curw += (space if len(cur) > 1 else 0) + wl
     lines.append(cur)
     return lines
 
 
-def slide(idx, total, text, accent, handle, hook=False, last=False):
+def slide(idx, total, text, accent, handle, size="m", last=False):
     p = idx / (total - 1)
     img = scene(p)
-    # darken top for text legibility
     top = Image.new("RGB", (W, H), (0, 0, 0))
     mask = Image.linear_gradient("L").resize((W, H)).transpose(Image.FLIP_TOP_BOTTOM).point(lambda v: int(v * 0.85))
-    mask = mask.crop((0, 0, W, H))
-    img = Image.composite(top, img, mask.point(lambda v: v if v > 0 else 0).resize((W, H)))
+    img = Image.composite(top, img, mask)
     d = ImageDraw.Draw(img)
-    size = 84 if len(text) < 70 else 72
-    f = ImageFont.truetype(FONT_B, size)
-    lines = wrap(d, text, f, W - 180)
-    y0 = 120
+    base = SIZES.get(size, 82)
+    if len(text) > 80:
+        base = min(base, 70)
+    lines = layout(d, tokenize(text), base, W - 180, accent)
+    sans = ImageFont.truetype(FONT_B, base)
+    space = d.textlength(" ", font=sans)
+    y = 120 + base  # baseline of first line
     for ln in lines:
-        # accent word highlight
         x = 90
-        for wd in ln.split():
-            col = RED if wd.strip(".,").lower() in accent else (245, 245, 245)
-            d.text((x, y0), wd, font=f, fill=col)
-            x += d.textlength(wd + " ", font=f)
-        y0 += int(size * 1.18)
-    # footer
+        for w, f, col, em in ln:
+            d.text((x, y), w, font=f, fill=col, anchor="ls")
+            x += d.textlength(w, font=f) + space
+        y += int(base * 1.32)
     sf = ImageFont.truetype(FONT_B, 30)
     d.text((90, H - 90), "THE INNER COMMUNITY", font=sf, fill=(235, 235, 235))
     d.line([(90, H - 100), (330, H - 100)], fill=RED, width=3)
@@ -151,6 +185,6 @@ if __name__ == "__main__":
     os.makedirs(out, exist_ok=True)
     n = len(spec["slides"])
     for i, s in enumerate(spec["slides"]):
-        im = slide(i, n, s["text"], [a.lower() for a in s.get("accent", [])], spec["handle"], last=(i == n - 1))
+        im = slide(i, n, s["text"], [a.lower().strip(".,") for a in s.get("accent", [])], spec["handle"], size=s.get("size", "m"), last=(i == n - 1))
         im.convert("RGB").save(os.path.join(out, f"slide_{i+1:02d}.jpg"), quality=92, optimize=True)
     print("done", n)
