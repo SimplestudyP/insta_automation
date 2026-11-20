@@ -1,7 +1,7 @@
 # Learnings (read before writing tonight's post, update after each review)
 
 ## Facts (as of 2026-11-20 review)
-- Account has 4 followers. Windsor 30-day account data: reach was 0 on most days; total reach across 30 days is about 8, with the only engagement on 2026-11-02 (1 account engaged, 2 interactions, 1 share, 3 reach, 10 views).
+- Account has 4 followers. Windsor 30-day account data: reach was 0 on most days; summed daily reach across 30 days is about 9, with the only engagement on 2026-11-02 (1 account engaged, 2 interactions, 1 share, 3 reach, 10 views).
 - Only 1 post scored so far. Evidence is thin: change ONE variable at a time and do not over-read single posts.
 - Windsor data comes from a cache (Trial plan). Judge a post only once it is 20+ hours old.
 
