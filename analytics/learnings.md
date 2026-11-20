@@ -1,18 +1,20 @@
 # Learnings (read before writing tonight's post, update after each review)
 
-## Facts
-- Account had 4 followers and 17 posts on 2026-11-20. Account reach was 0 for the whole week before the first automated post.
-- The first automated post went live at 01:24 IST, when almost nobody is awake. Later posts go out about 22:00 IST.
-- Windsor data comes from a cache on the Trial plan (no hourly refresh). Judge a post only once it is 20+ hours old.
+## Facts (as of 2026-11-20 review)
+- Account has 4 followers. Windsor 30-day account data: reach was 0 on most days; total reach across 30 days is about 8, with the only engagement on 2026-11-02 (1 account engaged, 2 interactions, 1 share, 3 reach, 10 views).
+- Only 1 post scored so far. Evidence is thin: change ONE variable at a time and do not over-read single posts.
+- Windsor data comes from a cache (Trial plan). Judge a post only once it is 20+ hours old.
 
-## First review (2026-11-20)
-- Result: reach 1, views 3 (all from followers), zero likes, comments, saves, shares or follows.
-- Likely causes, in order: (1) posted at 01:24 IST, (2) the cover slide was a generic opener, (3) hashtags alone do not give a 4-follower account reach, (4) data may be stale.
-- This is one post, so it proves little. Treat it as a baseline, not a verdict on the format.
+## Post 1 (carousel, generic opener "Read this when you feel like quitting tonight", posted 01:24 IST)
+- Reach 1, views 3 (all from followers), 0 likes, comments, saves, shares, follows, profile visits. Verdict: flop (baseline).
+- Likely causes: posted at 01:24 IST when almost nobody is awake; generic opener; hashtags alone do not give a 4-follower account reach; a tiny account gets little reach whatever the content.
+- One post proves little. It is a baseline, not a verdict on the format.
 
-## Changes to apply
-1. Post at about 22:00 IST (already scheduled).
-2. Use a stinging hook as slide 1 (already in the task rules).
-3. Make slide 7 ask for one specific action that drives saves or shares ("Save this for the day you want to quit").
-4. Tag each post's spec.json with "hook_type" and "theme" so patterns can be compared later.
-5. Change one thing at a time so the cause of any jump or drop is clear.
+## Changes applied in the 2026-11-20 post
+1. Hook type changed to a stinging truth-callout: "You call fear a busy schedule." (theme: fear disguised as busyness).
+2. Posted at about 22:00 IST instead of 01:24 IST.
+3. Slide 7 asks for specific actions (save it, send it to someone who keeps postponing).
+4. New hashtag mix (selfdiscipline, mentalstrength, stoic, consistency, hardwork, growthmindset, personaldevelopment + theinnercommunity), since non-follower reach was 0.
+
+## Next review
+- Compare the 2026-11-20 post against the baseline on non-follower reach, saves, shares, follows. If still ~0, keep the hook type but test a different variable (posting hour or hashtag count, not both).

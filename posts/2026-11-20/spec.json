@@ -1,0 +1,15 @@
+{
+  "handle": "theinnercommunity",
+  "hook_type": "truth-callout",
+  "theme": "fear disguised as busyness",
+  "experiment": "Stinging truth-callout hook instead of a generic opener, specific save/send action on slide 7, new hashtag mix focused on discipline/mental-strength tags; posted about 22:00 IST instead of 01:24 IST.",
+  "slides": [
+    {"text": "You call [[fear]] a busy schedule.", "accent": ["fear"], "size": "xl"},
+    {"text": "You are not busy. You are [[avoiding]] one hard thing.", "accent": [], "size": "l"},
+    {"text": "Comfort feels safe. It is just a [[slow]] kind of loss.", "accent": ["slow"], "size": "m"},
+    {"text": "The gap between your words and your actions is [[loud]].", "accent": [], "size": "m"},
+    {"text": "One honest [[hour]] today beats a full year of planning.", "accent": ["hour"], "size": "m"},
+    {"text": "Fear shrinks the moment you [[move]].", "accent": [], "size": "l"},
+    {"text": "Decide. Do one hard thing before you sleep. [[Save]] this and send it to someone who keeps postponing.", "accent": ["save"], "size": "s"}
+  ]
+}
