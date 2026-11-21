@@ -1,0 +1,15 @@
+{
+  "handle": "theinnercommunity",
+  "hook_type": "truth-callout",
+  "theme": "someone else is outworking you",
+  "experiment": "Kept the winning variables from 2026-11-20 (truth-callout hook, same hashtag mix, ~22:00 IST, same save/send closer) and changed ONLY the theme: from fear disguised as busyness to someone else outworking you.",
+  "slides": [
+    {"text": "Someone [[hungrier]] is outworking you right now.", "accent": ["hungrier"], "size": "l"},
+    {"text": "They are not more talented. They just [[show up]] more.", "accent": [], "size": "m"},
+    {"text": "Every skipped day is a [[vote]] to stay the same.", "accent": ["vote"], "size": "m"},
+    {"text": "Envy is [[information]]. Take the lesson, skip the shame.", "accent": [], "size": "m"},
+    {"text": "Close the app. Do the [[hard]] thing for one hour.", "accent": ["hard"], "size": "l"},
+    {"text": "Small [[reps]], done daily, close any gap.", "accent": [], "size": "l"},
+    {"text": "Decide now. [[Save]] this, then send it to the one who needs the push.", "accent": ["save"], "size": "s"}
+  ]
+}
