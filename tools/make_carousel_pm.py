@@ -98,7 +98,6 @@ def slide_html(i, n, s, handle, fonts_css):
 {f'<img class="duo" src="file://{img_path}" style="object-position:{fx}% {fy}%">' if img_path else ''}
 <div class="blue-lift"></div>
 <svg class="fibre" width="{W}" height="{H}"><filter id="f"><feTurbulence type="fractalNoise" baseFrequency="0.9 0.025" numOctaves="3" seed="{i * 7 + 3}"/><feColorMatrix values="0 0 0 0 0.55  0 0 0 0 0.68  0 0 0 0 1  0 0 0 1.4 -0.45"/></filter><rect width="100%" height="100%" filter="url(#f)"/></svg>
-<div class="qmark">&ldquo;</div>
 """
         zone = "mid"
         tone = "on-blue"
@@ -111,6 +110,15 @@ def slide_html(i, n, s, handle, fonts_css):
 """
         tone = "on-photo"
 
+    if blue:  # quote marks hang tight on the first and last word (no fixed corners)
+        if pre:
+            pre = '<span class="q open">&ldquo;</span>' + pre
+        else:
+            key = '<span class="qk">&ldquo;</span>' + key
+        if post:
+            post = post + '<span class="q close">&rdquo;</span>'
+        else:
+            key = key + '<span class="qk">&rdquo;</span>'
     pre_html = f'<div class="pre">{pre}</div>' if pre else ""
     post_html = f'<div class="post">{post}</div>' if post else ""
     key_html = f'<div class="key k-{kstyle}" id="key" style="font-size:{key_px}px;{KEY_STYLE.get(kstyle, KEY_STYLE["italic"])}"><span>{key}</span></div>'
@@ -139,15 +147,19 @@ html,body{{width:{W}px;height:{H}px;background:#0d0d0d;overflow:hidden}}
 .duo{{filter:grayscale(1) contrast(1.25) brightness(1.7);mix-blend-mode:multiply;opacity:.7}}
 .blue-lift{{position:absolute;inset:0;background:#1d27b6;mix-blend-mode:lighten;opacity:.9}}
 .fibre{{position:absolute;inset:0;opacity:.28;mix-blend-mode:screen}}
-.qmark{{position:absolute;left:0;right:0;top:120px;text-align:center;font-family:'Playfair Display',serif;font-style:italic;font-weight:800;font-size:260px;line-height:1;color:#fff}}
+.q,.qk{{font-family:'Playfair Display',serif;font-style:italic;font-weight:800;line-height:0;display:inline-block}}
+.q{{font-size:2.5em;vertical-align:-0.4em}}
+.q.open{{margin-right:-.02em}}
+.q.close{{margin-left:-.1em}}
+.qk{{font-size:.62em;vertical-align:.12em}}
 .wrap{{position:absolute;left:{SAFE_X}px;right:{SAFE_X}px;display:flex;justify-content:center}}
 .wrap.top{{top:170px}}
 .wrap.mid{{top:50%;transform:translateY(-50%)}}
 .wrap.bottom{{bottom:250px;align-items:flex-end}}
 .block{{display:flex;flex-direction:column;max-width:{W - 2 * SAFE_X}px}}
 .pre,.post{{font-family:'Inter',sans-serif;font-weight:600;letter-spacing:-0.02em;line-height:1.04;text-shadow:0 2px 14px rgba(0,0,0,.38)}}
-.pre{{align-self:flex-start;margin-bottom:8px;text-wrap:balance}}
-.post{{align-self:flex-end;text-align:right;margin-top:8px;text-wrap:balance}}
+.pre{{align-self:center;text-align:center;margin-bottom:8px;text-wrap:balance}}
+.post{{align-self:center;text-align:center;margin-top:8px;text-wrap:balance}}
 .pre em,.post em{{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;letter-spacing:-0.02em}}
 .key{{align-self:center;text-align:center;white-space:nowrap;text-shadow:0 2px 14px rgba(0,0,0,.38)}}
 .key.k-box span{{display:inline-block;background:#0b34ec;color:#fff;padding:6px 26px 14px;text-shadow:none}}
@@ -173,7 +185,7 @@ html,body{{width:{W}px;height:{H}px;background:#0d0d0d;overflow:hidden}}
   let k={key_px};
   // lead size: about .42 of key, clamped like the design system (64px vs 148-160px)
   const lead=()=>Math.max(46,Math.min(74,Math.round(k*0.42)));
-  const apply=()=>{{key.style.fontSize=k+'px';[pre,post].forEach(e=>e&&(e.style.fontSize=lead()+'px'));}};
+  const apply=()=>{{key.style.fontSize=k+'px';[pre,post].forEach(e=>e&&(e.style.fontSize=lead()+'px'));if(post)post.style.marginTop=Math.round(k*0.14)+'px';if(pre)pre.style.marginBottom=Math.round(k*0.05)+'px';}};
   apply();
   const widest=()=>Math.max(key.scrollWidth,pre?pre.scrollWidth:0,post?post.scrollWidth:0);
   let guard=0;
@@ -181,18 +193,57 @@ html,body{{width:{W}px;height:{H}px;background:#0d0d0d;overflow:hidden}}
   // limit the block height so it never grows into the footer
   guard=0;
   while(block.getBoundingClientRect().height>560 && k>60 && guard++<80){{k-=4;apply();}}
+  // alignment: centre everything; a lead line narrower than the key word is tucked to the key's edge
+  const ks=key.querySelector('span');
+  const bw=block.getBoundingClientRect().width, kw=ks.getBoundingClientRect().width, kl=(bw-kw)/2;
+  const tucked={{}};
+  [[pre,'pre'],[post,'post']].forEach(([e,n])=>{{
+    if(!e) return;
+    const w=e.getBoundingClientRect().width;
+    if(w<=kw*0.98 && kw-w>24){{
+      e.style.alignSelf=n==='pre'?'flex-start':'flex-end';
+      e.style.textAlign=n==='pre'?'left':'right';
+      e.style[n==='pre'?'marginLeft':'marginRight']=kl+'px';
+      tucked[n]=true;
+    }}
+  }});
+  // layout lint
+  const warn=[];
+  const sx={SAFE_X};
+  const rects=[['block',block],['key',ks],['pre',pre],['post',post]].filter(r=>r[1]);
+  rects.forEach(([n,e])=>{{const r=e.getBoundingClientRect();
+    if(r.left<sx-4||r.right>{W}-sx+4) warn.push(n+' outside safe margins ('+Math.round(r.left)+'..'+Math.round(r.right)+')');}});
+  const br=block.getBoundingClientRect();
+  if(br.bottom>{H}-190) warn.push('block runs into footer (bottom '+Math.round(br.bottom)+')');
+  if(br.top<110) warn.push('block too close to top (top '+Math.round(br.top)+')');
+  [[pre,'pre'],[post,'post']].forEach(([e,n])=>{{
+    if(!e) return;
+    const t=e.textContent.trim();
+    if(/^[.,;:!?)]/.test(t)) warn.push(n+' line starts with punctuation');
+    const lines=Math.round(e.getBoundingClientRect().height/parseFloat(getComputedStyle(e).fontSize)/1.04);
+    if(lines>3) warn.push(n+' wraps to '+lines+' lines');
+    if(!tucked[n]){{const r=e.getBoundingClientRect();const cx=(r.left+r.right)/2;
+      if(Math.abs(cx-{W}/2)>40) warn.push(n+' is off-centre by '+Math.round(cx-{W}/2)+'px');}}
+  }});
+  if(k<84) warn.push('key word shrank to '+k+'px (line too long for this size)');
+  if(document.querySelector('.q,.qk')){{
+    const qs=[...document.querySelectorAll('.q,.qk')].map(e=>e.textContent);
+    if(!qs.includes('\u201c')||!qs.includes('\u201d')) warn.push('quote marks: opening and closing both required');
+  }}
+  window.__lint=warn;
   document.body.dataset.ready='1';
 }})();
 </script></body></html>"""
 
 
 def main():
-    spec_path, out_dir = Path(sys.argv[1]), Path(sys.argv[2])
+    spec_path, out_dir = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
     spec = json.loads(spec_path.read_text())
     slides = spec["slides"]
     handle = spec.get("handle", "theinnercommunity")
     fonts_css = font_face_css()
+    warnings = []
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page(viewport={"width": W, "height": H}, device_scale_factor=1)
@@ -202,10 +253,28 @@ def main():
             page.goto(f"file://{tmp}")
             page.wait_for_function("document.body.dataset.ready==='1'")
             page.wait_for_timeout(150)
+            for w in page.evaluate("window.__lint || []"):
+                warnings.append(f"slide {i + 1}: {w}")
             page.screenshot(path=str(out_dir / f"slide_{i + 1:02d}.jpg"), type="jpeg", quality=92)
             tmp.unlink()
         browser.close()
+    # contact sheet for the visual check (not committed)
+    from PIL import Image
+
+    cols = 4
+    rows = (len(slides) + cols - 1) // cols
+    sheet = Image.new("RGB", (540 * cols, 675 * rows), "#222")
+    for i in range(len(slides)):
+        im = Image.open(out_dir / f"slide_{i + 1:02d}.jpg").resize((540, 675))
+        sheet.paste(im, ((i % cols) * 540, (i // cols) * 675))
+    sheet.save(out_dir / "_check_sheet.jpg", quality=85)
     print("done", len(slides))
+    if warnings:
+        print("LAYOUT WARNINGS (fix wording/size/pos/key and re-render):")
+        for w in warnings:
+            print("  -", w)
+    else:
+        print("layout lint: no warnings")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,16 @@
+{
+  "handle": "theinnercommunity",
+  "style": "premium-minimal",
+  "hook_type": "truth-callout",
+  "theme": "someone else is outworking you",
+  "experiment": "Owner-requested redo of the 2026-11-21 post: same lines, new photo-based Premium Minimal design (replaces the deleted old-style post).",
+  "slides": [
+    {"text": "Someone [[hungrier]] is outworking you right now.", "image": "11-crane-hook", "key": "italic", "size": "l"},
+    {"text": "They are not more talented. They just [[show up]] more.", "image": "12-cafe-silhouette", "key": "sans", "size": "m"},
+    {"text": "Every skipped day is a [[vote]] to stay the same.", "image": "02-bed-laptop", "key": "box", "size": "l"},
+    {"text": "Envy is [[information]]. Take the lesson, skip the shame.", "image": "06-grabbing-money", "key": "italic", "size": "m"},
+    {"text": "Close the app. Do the [[hard]] thing for one hour.", "image": "03-gym-rack", "key": "roman", "size": "l"},
+    {"text": "Small [[reps]], done daily, close any gap.", "image": "04-deadlift", "key": "italic", "size": "l"},
+    {"text": "Decide now. [[Save]] this, then send it to the one who needs the push.", "image": "14-night-laptop", "key": "sans", "size": "m", "scene": "blue"}
+  ]
+}
