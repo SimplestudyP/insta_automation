@@ -18,3 +18,8 @@
 
 ## Next review
 - Compare 2026-11-21 against 2026-11-20 on non-follower reach, saves, shares, follows (post-level, and account-level for the day). If the lift repeats, truth-callout plus ~22:00 IST is working: keep it and test a different variable (for example 5 slides instead of 7, or a different hashtag count). If it does not repeat, suspect the 2026-11-20 day was an outlier and test posting hour next.
+
+## Design change (2026-11-22)
+- The owner supplied 14 photos and asked for the Premium Minimal Edit text style. From 2026-11-22 carousels use photos from assets/photos with Inter + Playfair Display italic key words, one electric blue, and a blue-field closing slide (tools/make_carousel_pm.py). The old illustrated figure/moon look with calligraphy is retired (posts 2026-11-19 to 2026-11-21).
+- Weekend Reels are cancelled: carousel every night, no video posts.
+- Visual style is now the variable under test. Compare posts made in the old style (3 posts) with the new style on non-follower reach, saves, shares, follows. Do not change hook type, hashtag mix and posting time at the same time unless the review clearly calls for it.

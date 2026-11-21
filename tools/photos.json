@@ -1,0 +1,100 @@
+{
+ "01-office-window": {
+  "zone": "bottom",
+  "fx": 50,
+  "fy": 50,
+  "dim": 0.7,
+  "mood": "late-night work, empty chair, working while others rest, solitude, quiet focus"
+ },
+ "02-bed-laptop": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 50,
+  "dim": 0.62,
+  "mood": "comfort, procrastination in bed, scrolling at night, laptop glow, wasted hours"
+ },
+ "03-gym-rack": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 45,
+  "dim": 0.7,
+  "mood": "weights waiting, discipline, the work does not care how you feel, empty gym"
+ },
+ "04-deadlift": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 50,
+  "dim": 0.6,
+  "mood": "effort, lifting heavy, head down, doing the rep, pain of progress"
+ },
+ "05-chains": {
+  "zone": "bottom",
+  "fx": 50,
+  "fy": 40,
+  "dim": 0.58,
+  "mood": "habits that bind, self-imposed limits, being held back, comfort as a chain"
+ },
+ "06-grabbing-money": {
+  "zone": "bottom",
+  "fx": 50,
+  "fy": 30,
+  "dim": 0.6,
+  "mood": "everyone chasing the same thing, scarcity, ambition, competition, hunger"
+ },
+ "07-carrying-beam": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 55,
+  "dim": 0.55,
+  "mood": "carrying the weight alone, effort nobody sees, the long climb, burden you choose"
+ },
+ "08-heavy-sack": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 50,
+  "dim": 0.62,
+  "mood": "carrying more than you think you can, heavy load, endurance, keep walking"
+ },
+ "09-need-a-job": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 60,
+  "dim": 0.55,
+  "mood": "starting from nothing, rock bottom as a starting line, setback before the comeback"
+ },
+ "10-alley-bag": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 55,
+  "dim": 0.62,
+  "mood": "relentless, work that does not wait, long road, daily load, grind"
+ },
+ "11-crane-hook": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 12,
+  "dim": 0.9,
+  "mood": "what are you lifting, ambition, pressure, hanging in the balance, rising, a hook for the scroll"
+ },
+ "12-cafe-silhouette": {
+  "zone": "bottom",
+  "fx": 50,
+  "fy": 50,
+  "dim": 0.9,
+  "mood": "early hours, someone already working, others are ahead, quiet routine, dark morning"
+ },
+ "13-saw-dust": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 60,
+  "dim": 0.8,
+  "mood": "work in the dust, craft, unseen effort, cutting away the unnecessary, repetition"
+ },
+ "14-night-laptop": {
+  "zone": "top",
+  "fx": 50,
+  "fy": 60,
+  "dim": 0.95,
+  "mood": "late-night grind, building in silence, one lamp, quiet self-belief, showing up alone"
+ }
+}
