@@ -8,6 +8,16 @@ Scored per post: score = likes + 2*comments + 3*saves + 3*shares + 5*follows. No
 | 2026-11-20 | Carousel (7) | You call fear a busy schedule. | truth-callout | 21:52 (media id 18440881840178044) | 1 (post-level) | 4 | 0 | 0 | 0 | 0 | 0 | 0 (post-level) | Average, provisional (post is ~24h old). Post-level Windsor insights read reach 1 / views 4 / zero engagement, but account-level for 2026-11-20 read reach 111, views 132 (127 from non-followers), 4 accounts engaged, 5 interactions, 1 save, 1 share, the best day in the 30-day window. Post-level data lags the account-level data, and day totals cannot be pinned to one post, so treat as an unconfirmed positive signal. |
 | 2026-11-21 | Carousel (7) | Someone hungrier is outworking you right now. (caption: same line + Close the gap with one hard hour today.) | truth-callout | 21:57 (media id 18127351352059972) | - | - | - | - | - | - | - | - | old illustrated style; replaced by the 2026-11-21-v2 redo below. Delete via Windsor failed (account lacks instagram_manage_contents permission), so the owner must delete it in the Instagram app; media id 18127351352059972 |
 
-| 2026-11-22 (posts/2026-11-21-v2) | Carousel (7), photo style | Someone hungrier is outworking you right now. (same lines as the deleted post, redone in the new design) | truth-callout | 00:23 (media id 18122940868753352) | - | - | - | - | - | - | - | - | too early, data lags |
+| 2026-11-22 (posts/2026-11-21-v2) | Carousel (7), photo style | Someone hungrier is outworking you right now. (same lines as the old-style post, redone in the new design) | truth-callout | 00:23 (media id 18122940868753352) | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | Flop. Read from Windsor ~21.5h after posting: reach 1, views 2, zero engagement, zero follows, zero profile visits. Caption had no #theinnercommunity. |
 
 Note: posts up to 2026-11-21 used the old illustrated style (figure, moon, calligraphy). Posts from 2026-11-22 use the photo-based Premium Minimal style.
+| 2026-11-22 (posts/2026-11-22) | Carousel (7), photo style | Your comfort zone is charging you interest. (caption adds: Pay it in effort now, or in years later.) | truth-callout (cost metaphor) | ~22:00 (media id: see below) | - | - | - | - | - | - | - | - | too early, data lags |
+
+## Reference: two Reels on the account that were not posted by this routine (Windsor last_30d, read 2026-11-22)
+| Posted (UTC) | Type | Hook | Reach | Views | Likes | Comments | Saves | Shares |
+|---|---|---|---|---|---|---|---|---|
+| 2026-11-21 04:41 | Reel | Reality bends more than you think. (Sam Altman clip, caption ends "Save this for the day you're about to play it safe.") | 113 | 132 | 2 | 0 | 1 | 1 |
+| 2026-11-21 19:49 | Reel | You don't need permission to fail. (Peter Dinklage clip, caption ends "Save this for the day you're waiting for a yes.") | 124 | 140 | 5 | 0 | 3 | 2 |
+
+Windsor post-level data for 2026-11-22 returned only these two Reels and the v2 carousel; the 2026-11-19/20 carousels and the old-style 2026-11-21 post were not returned (cause unknown: outside cache, or removed). Their rows above are kept from earlier reads.
+Account-level days (looks like US Pacific day boundaries): 2026-11-20 reach 111 / views 132 (127 non-follower), 1 save, 1 share; 2026-11-21 reach 127 / views 144 (139 non-follower), 5 accounts engaged, 12 interactions, 3 saves, 2 shares; followers_count 5 on 2026-11-22. These day totals match the two Reels almost exactly, so the earlier reach lift most likely came from the Reels, not the carousels.

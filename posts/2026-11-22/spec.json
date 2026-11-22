@@ -1,0 +1,52 @@
+{
+  "handle": "theinnercommunity",
+  "style": "premium-minimal",
+  "hook_type": "truth-callout",
+  "theme": "comfort has a price",
+  "experiment": "After the 2026-11-22 flop (reach 1): new theme (comfort has a price, instead of being outworked), broader hashtag mix incl. #theinnercommunity and high-volume tags (#mindset #motivation #selfimprovement), save-for-the-day-you-quit CTA copied in structure from what drew saves on the owner's Reels. Visual style, posting hour (~22:00 IST) and 7-slide length unchanged.",
+  "slides": [
+    {
+      "text": "Your comfort zone is charging you [[interest]].",
+      "image": "01-office-window",
+      "key": "italic",
+      "size": "l"
+    },
+    {
+      "text": "Comfort feels free. It just bills you [[later]].",
+      "image": "02-bed-laptop",
+      "key": "italic",
+      "size": "l"
+    },
+    {
+      "text": "Discipline is heavy. [[Regret]] is heavier.",
+      "image": "07-carrying-beam",
+      "key": "box",
+      "size": "m"
+    },
+    {
+      "text": "Cut away the [[excuse]]. Keep the work.",
+      "image": "13-saw-dust",
+      "key": "sans",
+      "size": "m"
+    },
+    {
+      "text": "The road does not shorten. You get [[stronger]].",
+      "image": "10-alley-bag",
+      "key": "italic",
+      "size": "m"
+    },
+    {
+      "text": "Starting from [[zero]] is still starting.",
+      "image": "09-need-a-job",
+      "key": "roman",
+      "size": "l"
+    },
+    {
+      "text": "Decide now. [[Save]] this for the day you want to quit.",
+      "image": "08-heavy-sack",
+      "key": "sans",
+      "size": "m",
+      "scene": "blue"
+    }
+  ]
+}
