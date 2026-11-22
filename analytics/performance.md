@@ -11,7 +11,7 @@ Scored per post: score = likes + 2*comments + 3*saves + 3*shares + 5*follows. No
 | 2026-11-22 (posts/2026-11-21-v2) | Carousel (7), photo style | Someone hungrier is outworking you right now. (same lines as the old-style post, redone in the new design) | truth-callout | 00:23 (media id 18122940868753352) | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | Flop. Read from Windsor ~21.5h after posting: reach 1, views 2, zero engagement, zero follows, zero profile visits. Caption had no #theinnercommunity. |
 
 Note: posts up to 2026-11-21 used the old illustrated style (figure, moon, calligraphy). Posts from 2026-11-22 use the photo-based Premium Minimal style.
-| 2026-11-22 (posts/2026-11-22) | Carousel (7), photo style | Your comfort zone is charging you interest. (caption adds: Pay it in effort now, or in years later.) | truth-callout (cost metaphor) | ~22:00 (media id: see below) | - | - | - | - | - | - | - | - | too early, data lags |
+| 2026-11-22 (posts/2026-11-22) | Carousel (7), photo style | Your comfort zone is charging you interest. (caption adds: Pay it in effort now, or in years later.) | truth-callout (cost metaphor) | 21:55 (media id 18106306508562543) | - | - | - | - | - | - | - | - | too early, data lags |
 
 ## Reference: two Reels on the account that were not posted by this routine (Windsor last_30d, read 2026-11-22)
 | Posted (UTC) | Type | Hook | Reach | Views | Likes | Comments | Saves | Shares |
