@@ -11,13 +11,17 @@ Scored per post: score = likes + 2*comments + 3*saves + 3*shares + 5*follows. No
 | 2026-11-22 (posts/2026-11-21-v2) | Carousel (7), photo style | Someone hungrier is outworking you right now. (same lines as the old-style post, redone in the new design) | truth-callout | 00:23 (media id 18122940868753352) | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | Flop. Read from Windsor ~21.5h after posting: reach 1, views 2, zero engagement, zero follows, zero profile visits. Caption had no #theinnercommunity. |
 
 Note: posts up to 2026-11-21 used the old illustrated style (figure, moon, calligraphy). Posts from 2026-11-22 use the photo-based Premium Minimal style.
-| 2026-11-22 (posts/2026-11-22) | Carousel (7), photo style | Your comfort zone is charging you interest. (caption adds: Pay it in effort now, or in years later.) | truth-callout (cost metaphor) | 21:55 (media id 18106306508562543) | - | - | - | - | - | - | - | - | too early, data lags |
+| 2026-11-22 (posts/2026-11-22) | Carousel (7), photo style | Your comfort zone is charging you interest. (caption adds: Pay it in effort now, or in years later.) | truth-callout (cost metaphor) | 21:53 (media id 18106306508562543) | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | Flop. Read from Windsor ~24h after posting: reach 1, views 2, zero likes/comments/saves/shares/follows/profile visits. Broad hashtags (#theinnercommunity + #mindset etc.) did not lift reach. |
+
+| 2026-11-23 (posts/2026-11-23) | Carousel (7), photo style | Your someday is running out of days. (caption adds: Stop negotiating with tomorrow. Start the first hard hour.) | time-loss | ~22:00 | - | - | - | - | - | - | - | - | too early, data lags |
 
 ## Reference: two Reels on the account that were not posted by this routine (Windsor last_30d, read 2026-11-22)
 | Posted (UTC) | Type | Hook | Reach | Views | Likes | Comments | Saves | Shares |
 |---|---|---|---|---|---|---|---|---|
 | 2026-11-21 04:41 | Reel | Reality bends more than you think. (Sam Altman clip, caption ends "Save this for the day you're about to play it safe.") | 113 | 132 | 2 | 0 | 1 | 1 |
-| 2026-11-21 19:49 | Reel | You don't need permission to fail. (Peter Dinklage clip, caption ends "Save this for the day you're waiting for a yes.") | 124 | 140 | 5 | 0 | 3 | 2 |
+| 2026-11-21 19:49 | Reel | You don't need permission to fail. (Peter Dinklage clip, caption ends "Save this for the day you're waiting for a yes.") | 125 | 141 | 5 | 0 | 3 | 2 |
 
 Windsor post-level data for 2026-11-22 returned only these two Reels and the v2 carousel; the 2026-11-19/20 carousels and the old-style 2026-11-21 post were not returned (cause unknown: outside cache, or removed). Their rows above are kept from earlier reads.
 Account-level days (looks like US Pacific day boundaries): 2026-11-20 reach 111 / views 132 (127 non-follower), 1 save, 1 share; 2026-11-21 reach 127 / views 144 (139 non-follower), 5 accounts engaged, 12 interactions, 3 saves, 2 shares; followers_count 5 on 2026-11-22. These day totals match the two Reels almost exactly, so the earlier reach lift most likely came from the Reels, not the carousels.
+
+Read 2026-11-23 (Windsor last_30d, cached): post-level returned the same 4 items as before (2 Reels, v2 carousel, 2026-11-22 carousel); the 2026-11-19/20 carousels and old-style 2026-11-21 post were not returned. Account-level 2026-11-22: reach 3, views 4 (2 followers, 2 non-followers), 0 accounts engaged, 0 interactions. followers_count 5 on 2026-11-23. All carousels remain at reach 1.

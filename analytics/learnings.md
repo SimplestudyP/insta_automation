@@ -1,19 +1,19 @@
 # Learnings (read before writing tonight's post, update after each review)
 
-## Facts (review of 2026-11-22, Windsor last_30d, cached)
-- Followers: 5 (followers_count 2026-11-22). Every carousel with a post-level read reached 1 account: 2026-11-20 (x2), and the photo-style redo 2026-11-21-v2 (reach 1, views 2, zero likes/saves/shares/follows after ~21.5h).
-- The only real reach in 30 days came from two Reels the owner posted (113 and 124 reach, 4 saves, 3 shares). The account-level reach spikes on 2026-11-20 (111) and 2026-11-21 (127) match those Reels, so the earlier theory that the truth-callout carousel caused the lift is most likely wrong.
-- Reels are off the table (carousel only), so the question is what makes a carousel reach non-followers. At 5 followers and about 1 reach per carousel, the cause is likely distribution (hashtags, account size, early engagement), not the lines or the look. One post proves little.
+## Facts (review of 2026-11-23, Windsor last_30d, cached)
+- Followers: 5. Every carousel with a post-level read reached 1 account (views 2-4, zero likes/comments/saves/shares/follows): 2026-11-19, 2026-11-20 (x2 reads), 2026-11-21-v2 (photo style), 2026-11-22 (comfort-interest hook, broad hashtags). 2026-11-22 account-level day: reach 3, views 4, no engagement.
+- The only real reach in 30 days came from two Reels the owner posted on 2026-11-21 (reach 113 and 125, 4 saves, 3 shares). Reels are off the table, so carousel distribution is the open question.
+- Not enough scored posts to name a winning pattern (every carousel scores 0). One post proves little, and a 5-follower account gets almost no organic carousel reach regardless of copy.
 
-## Post comparison (carousels only)
-- Generic opener (11-20 01:24 IST), truth-callout old style (11-20 21:52 IST), truth-callout photo style (11-22 00:23 IST): all reach 1. Hook type, visual style and posting hour made no measurable difference so far.
-- Photo-style redo caption missed #theinnercommunity and used only niche tags (#stoic #mentalstrength ...). The Reels that reached people used broad tags (#mindset, #ambition, #growthmindset, #selfimprovement, #dailymotivation) and a "Save this for the day you ..." closing line that drew saves and shares.
+## What the comparison says
+- Old illustrated style vs photo style: both reach 1. Generic opener, truth-callout, and cost-metaphor hooks: all reach 1. Narrow hashtags (2026-11-21-v2) vs broad hashtags incl. #theinnercommunity (2026-11-22): both reach 1. No variable tested so far moved reach; likely the limit is account size/distribution, not the lines or look.
+- Saves and shares only ever appeared on the owner's Reels, whose captions ended "Save this for the day you...". The same CTA on the 2026-11-22 carousel drew 0 saves.
 
-## Changes applied in the 2026-11-22 post
-1. Theme change after a flop: from being outworked to the price of comfort ("Your comfort zone is charging you interest.").
-2. Hashtag mix changed because non-follower reach was zero: #theinnercommunity plus broad tags (#mindset #motivation #selfimprovement #discipline #dailymotivation #growthmindset #consistency); dropped #stoic, #mentalstrength, #hardwork, #personaldevelopment.
-3. Stronger closing call to action in the Reels style: "Save this for the day you want to quit." (previous: "Save this, then send it to the one who needs the push.")
-4. Unchanged on purpose: photo style, 7 slides, ~22:00 IST.
+## Changes applied in the 2026-11-23 post
+1. Hook type changed after a flop: time-loss ("Your someday is running out of days.") instead of truth-callout / cost metaphor. Theme: someday is running out. This is the main variable under test.
+2. CTA changed from save to a specific send ("Send this to someone who keeps saying someday"), since saves stayed at 0 and a send aims at a non-follower via DM.
+3. Hashtags: kept #theinnercommunity, #mindset, #motivation, #selfimprovement, #growthmindset; rotated in #successmindset, #selfdiscipline, #quotes (the broad-mix test is not yet conclusive, so only part of it changed).
+4. Unchanged: photo style, 7 slides, ~22:00 IST. Photos: least-recently-used first (05 chains never used before).
 
 ## Next review
-- Check whether the broader hashtag mix lifts non-follower reach above 1. If reach is still 1 after 3 more nights, hashtags are not the lever; test posting hour and a 5-slide carousel, one at a time. Keep the "Save this for the day you ..." CTA only if saves show up.
+- If reach is still 1 after 3 more nights, stop expecting copy changes to fix reach: test posting hour and a shorter (5-slide) carousel, one at a time, and flag to the owner that organic carousel reach at 5 followers may need outside help (engagement from the owner's Reels audience, collab, shares). Keep any CTA only if saves/shares appear.

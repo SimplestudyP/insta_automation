@@ -1,0 +1,52 @@
+{
+  "handle": "theinnercommunity",
+  "style": "premium-minimal",
+  "hook_type": "time-loss",
+  "theme": "someday is running out",
+  "experiment": "After the 2026-11-22 flop (reach 1, broad hashtags did not lift reach): new hook type (time-loss instead of truth-callout/cost metaphor), CTA changed from save to send-to-someone because saves stayed at 0, two-thirds of hashtags kept, three rotated. Photo style, 7 slides and ~22:00 IST unchanged.",
+  "slides": [
+    {
+      "text": "Your [[someday]] is running out of days.",
+      "image": "11-crane-hook",
+      "key": "italic",
+      "size": "l"
+    },
+    {
+      "text": "Planning feels like progress. The calendar [[disagrees]].",
+      "image": "12-cafe-silhouette",
+      "key": "sans",
+      "size": "m"
+    },
+    {
+      "text": "Time is the one [[currency]] you cannot earn back.",
+      "image": "01-office-window",
+      "key": "box",
+      "size": "m"
+    },
+    {
+      "text": "Habits are quiet [[chains]]. Forge yours on purpose.",
+      "image": "05-chains",
+      "key": "roman",
+      "size": "m"
+    },
+    {
+      "text": "The bar does not care how you [[feel]].",
+      "image": "03-gym-rack",
+      "key": "italic",
+      "size": "l"
+    },
+    {
+      "text": "Begin [[badly]]. Improve while moving.",
+      "image": "04-deadlift",
+      "key": "sans",
+      "size": "m"
+    },
+    {
+      "text": "Decide now. [[Send]] this to someone who keeps saying someday.",
+      "image": "14-night-laptop",
+      "key": "sans",
+      "size": "m",
+      "scene": "blue"
+    }
+  ]
+}
