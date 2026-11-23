@@ -13,7 +13,7 @@ Scored per post: score = likes + 2*comments + 3*saves + 3*shares + 5*follows. No
 Note: posts up to 2026-11-21 used the old illustrated style (figure, moon, calligraphy). Posts from 2026-11-22 use the photo-based Premium Minimal style.
 | 2026-11-22 (posts/2026-11-22) | Carousel (7), photo style | Your comfort zone is charging you interest. (caption adds: Pay it in effort now, or in years later.) | truth-callout (cost metaphor) | 21:53 (media id 18106306508562543) | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | Flop. Read from Windsor ~24h after posting: reach 1, views 2, zero likes/comments/saves/shares/follows/profile visits. Broad hashtags (#theinnercommunity + #mindset etc.) did not lift reach. |
 
-| 2026-11-23 (posts/2026-11-23) | Carousel (7), photo style | Your someday is running out of days. (caption adds: Stop negotiating with tomorrow. Start the first hard hour.) | time-loss | ~22:00 | - | - | - | - | - | - | - | - | too early, data lags |
+| 2026-11-23 (posts/2026-11-23) | Carousel (7), photo style | Your someday is running out of days. (caption adds: Stop negotiating with tomorrow. Start the first hard hour.) | time-loss | ~22:00 IST (media id 18023918528949942) | - | - | - | - | - | - | - | - | too early, data lags |
 
 ## Reference: two Reels on the account that were not posted by this routine (Windsor last_30d, read 2026-11-22)
 | Posted (UTC) | Type | Hook | Reach | Views | Likes | Comments | Saves | Shares |
