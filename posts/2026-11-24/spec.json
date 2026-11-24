@@ -1,0 +1,52 @@
+{
+  "handle": "theinnercommunity",
+  "style": "premium-minimal",
+  "hook_type": "contrast",
+  "theme": "gap between goals and habits",
+  "experiment": "After the 2026-11-23 flop (reach 1, 0 engagement; every carousel so far reached 1): new hook type (contrast between goals and habits instead of time-loss), new theme, hashtag mix rotated to niche discipline tags plus #innergrowth, CTA changed to a specific save action tied to tomorrow morning. Photo style, 7 slides and ~22:00 IST unchanged.",
+  "slides": [
+    {
+      "text": "Your goals have never met your [[habits]].",
+      "image": "02-bed-laptop",
+      "key": "italic",
+      "size": "l"
+    },
+    {
+      "text": "Everyone wants it. Few will [[schedule]].",
+      "image": "12-cafe-silhouette",
+      "key": "italic",
+      "size": "m"
+    },
+    {
+      "text": "Talk is cheap. [[Repetition]] is proof.",
+      "image": "13-saw-dust",
+      "key": "box",
+      "size": "m"
+    },
+    {
+      "text": "The work nobody sees is the work that [[counts]].",
+      "image": "07-carrying-beam",
+      "key": "roman",
+      "size": "m"
+    },
+    {
+      "text": "Be [[boring]] for ninety days.",
+      "image": "10-alley-bag",
+      "key": "sans",
+      "size": "l"
+    },
+    {
+      "text": "[[Zero]] is a starting line, not a verdict.",
+      "image": "09-need-a-job",
+      "key": "italic",
+      "size": "l"
+    },
+    {
+      "text": "Decide now. [[Save]] this. Open it before your first scroll tomorrow.",
+      "image": "08-heavy-sack",
+      "key": "sans",
+      "size": "m",
+      "scene": "blue"
+    }
+  ]
+}
