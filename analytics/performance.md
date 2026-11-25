@@ -32,4 +32,4 @@ Read 2026-11-24 (Windsor last_30d, cached): post-level returned 5 items (2 Reels
 
 Read 2026-11-25 (Windsor last_30d, cached): post-level returned 7 items: 3 Reels (Altman 114 reach, Dinklage 126, and a new Raj Shamani Reel posted 2026-11-24 09:21 UTC: reach 123 / views 145, 8 likes, 3 saves, 0 shares), the v2 carousel and the 2026-11-22, 2026-11-23 and 2026-11-24 carousels (all reach 1, views 2-3, zero engagement). The 2026-11-19/20 carousels and the old-style 2026-11-21 post were not returned again. Account-level: 2026-11-22 reach 3, 2026-11-23 reach 4, 2026-11-24 reach 123 / views 146 (142 non-follower), 9 accounts engaged, 11 interactions, 3 saves. followers_count 5.
 
-| 2026-11-25 (posts/2026-11-25) | Carousel (7), photo style | Everyone you envy started while you waited. | comparison (others moved first) | ~21:55 IST | - | - | - | - | - | - | - | - | too early, data lags |
+| 2026-11-25 (posts/2026-11-25) | Carousel (7), photo style | Everyone you envy started while you waited. | comparison (others moved first) | ~21:57 IST (media id 18113303681266965) | - | - | - | - | - | - | - | - | too early, data lags |
