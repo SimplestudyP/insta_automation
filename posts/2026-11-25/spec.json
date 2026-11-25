@@ -1,0 +1,52 @@
+{
+ "handle": "theinnercommunity",
+ "style": "premium-minimal",
+ "hook_type": "comparison",
+ "theme": "envy: others started first while you waited",
+ "experiment": "After the 2026-11-24 flop (reach 1, 0 engagement; six carousels all at reach 1): new hook type (comparison, others moved first, instead of contrast), new theme, CTA changed to send-to-one-friend-and-start-together, hashtag mix rotated. Photo style, 7 slides and ~22:00 IST unchanged.",
+ "slides": [
+  {
+   "text": "Everyone you envy started while you [[waited]].",
+   "image": "11-crane-hook",
+   "key": "italic",
+   "size": "l"
+  },
+  {
+   "text": "They were never more ready. They were just [[earlier]].",
+   "image": "12-cafe-silhouette",
+   "key": "roman",
+   "size": "m"
+  },
+  {
+   "text": "Every day you compare is a day you did not [[build]].",
+   "image": "14-night-laptop",
+   "key": "box",
+   "size": "m"
+  },
+  {
+   "text": "While you hesitate, someone else [[starts]].",
+   "image": "01-office-window",
+   "key": "sans",
+   "size": "l"
+  },
+  {
+   "text": "Momentum is not found. It is [[earned]].",
+   "image": "03-gym-rack",
+   "key": "italic",
+   "size": "l"
+  },
+  {
+   "text": "A year from now you will have [[proof]] or excuses.",
+   "image": "04-deadlift",
+   "key": "italic",
+   "size": "m"
+  },
+  {
+   "text": "Decide now. [[Send]] this to one friend and start together.",
+   "image": "05-chains",
+   "key": "sans",
+   "size": "m",
+   "scene": "blue"
+  }
+ ]
+}

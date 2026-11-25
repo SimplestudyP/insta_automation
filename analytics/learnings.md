@@ -1,19 +1,19 @@
 # Learnings (read before writing tonight's post, update after each review)
 
-## Facts (review of 2026-11-24, Windsor last_30d, cached)
-- Followers: 5. All five carousels with a post-level read reached 1 account (views 2-4, zero likes/comments/saves/shares/follows/profile visits): 2026-11-19, 2026-11-20, 2026-11-21-v2, 2026-11-22, 2026-11-23 (aged ~24h, Flop). Score 0 for every one.
-- Account-level days after the Reels: 2026-11-22 reach 3, 2026-11-23 reach 4 (3 non-follower views), 0 engaged. Post-level reach (1) and day totals disagree; do not pin a day total on one post.
-- The only real reach in 30 days came from the owner's two Reels of 2026-11-21 (reach 114 and 126, 4 saves, 3 shares). Reels are off the table here.
+## Facts (review of 2026-11-25, Windsor last_30d, cached)
+- Followers: 5. Six scored carousels (2026-11-19, 11-20, 11-21-v2, 11-22, 11-23, 11-24), all aged ~24h or more, all Flop: post-level reach 1, views 2-4, zero likes/comments/saves/shares/follows/profile visits. Score 0 every time.
+- The only real reach in 30 days came from the owner's three Reels (reach 114, 126, 123; 7 saves, 3 shares in total). The 2026-11-24 day total (reach 123, 9 accounts engaged, 3 saves) matches the new Reel of 2026-11-24 09:21 UTC, not the carousel. Reels are off the table for this routine.
+- Post-level and account-level numbers disagree on carousel days (post-level 1 vs day totals of 3-4); never pin a day total on one carousel.
 
 ## What the comparison says
-- Five carousels, five zeros. Old illustrated vs photo style, generic opener vs truth-callout vs cost metaphor vs time-loss hook, narrow vs broad vs mixed hashtags, save vs send CTA: nothing moved reach. Evidence is thin (n=5, all zero), so no pattern is winning yet. The likely limit is account size and distribution, not the lines or look; one post proves little.
-- Not tested yet: posting hour, carousel length, an engagement-bait CTA, and any outside push (owner sharing to Stories/DMs, collab).
+- Six carousels, six zeros. Old illustrated vs photo style, generic opener vs truth-callout vs cost vs time-loss vs contrast hooks, narrow vs broad hashtags, save vs send CTA: nothing moved reach. No pattern is winning; there is nothing to lean into yet. Likely cause: a 5-follower account gets almost no organic carousel distribution, and one post proves little. Photo style has not beaten old style on non-follower reach (both 1).
+- Not tested yet: posting hour (fixed by the schedule, ~21:50 IST; the owner would have to change the schedule), carousel length, outside push (owner sharing to Stories or DMs).
 
-## Changes applied in the 2026-11-24 post
-1. Hook type changed after a flop: contrast (goals vs habits) instead of time-loss. Theme: the gap between what you say and what you repeat.
-2. CTA stays a save but gets a concrete trigger ("Open it before your first scroll tomorrow"), since a bare save/send drew nothing.
-3. Hashtags rotated: #theinnercommunity #discipline #innergrowth #dailymotivation #mentalstrength #hardwork #stoic #consistency (first use of #innergrowth).
-4. Unchanged: photo style, 7 slides, ~22:00 IST. Photos: least recently used first, skipping the hands-heavy one for text safety.
+## Changes applied in the 2026-11-25 post
+1. New hook type after another flop: comparison (others moved first) instead of contrast, with a new theme: envy and who started earlier.
+2. CTA made more specific and social: "Send this to one friend and start together" (a shareable action for two people, since shares are what widen reach), instead of a bare save/send.
+3. Hashtags rotated to a new combination (first use of #personaldevelopment with #successmindset together, #quotes, #selfdiscipline); #theinnercommunity kept.
+4. Unchanged: photo style, 7 slides, ~22:00 IST. Photos: least recently used first (14, 11, 01, 03, 04, 05), with 12 instead of 06 on slide 2 because 06 is all hands and text would cover them.
 
 ## Next review
-- If reach is still 1 on 2026-11-25, test posting hour (one variable), then a 5-slide carousel. Tell the owner that organic carousel reach at 5 followers likely needs outside help: sharing the carousel to their own Stories, DMs, or re-using the Reels audience. Keep any CTA only if saves/shares appear.
+- If still reach 1, the next single variable is carousel length (5 slides). Tell the owner organic carousel reach at 5 followers likely needs outside help: sharing the carousel to their own Stories or DMs, or pointing the Reels audience to the carousels. Keep any CTA only if saves/shares appear.
