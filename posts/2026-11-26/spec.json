@@ -1,0 +1,16 @@
+{
+ "handle": "theinnercommunity",
+ "style": "premium-minimal",
+ "hook_type": "no-rescue",
+ "theme": "nobody is coming to save your potential; self-reliance and routine",
+ "experiment": "After the 2026-11-25 flop (reach 1, 6 views all from followers, zero engagement; seven carousels all at reach 1): new hook type (no-rescue / self-reliance instead of comparison) and theme, CTA changed to send-to-the-person-who-keeps-you-honest (accountability), hashtag mix rotated to a new combination. Photo style, 7 slides and ~22:00 IST unchanged.",
+ "slides": [
+  {"text": "Nobody is coming to save your [[potential]].", "image": "02-bed-laptop", "key": "italic", "size": "xl"},
+  {"text": "Potential is a promise you keep [[postponing]].", "image": "03-gym-rack", "key": "italic", "size": "m"},
+  {"text": "Rescue looks like a boring [[routine]].", "image": "10-alley-bag", "key": "sans", "size": "l"},
+  {"text": "Nobody applauds the first hundred [[reps]].", "image": "13-saw-dust", "key": "box", "size": "l"},
+  {"text": "Do not wish for a lighter load. Build a stronger [[back]].", "image": "08-heavy-sack", "key": "roman", "size": "m"},
+  {"text": "Rock bottom is solid [[ground]]. Build on it.", "image": "09-need-a-job", "key": "italic", "size": "m"},
+  {"text": "Decide now. [[Send]] this to the person who keeps you honest.", "image": "07-carrying-beam", "key": "sans", "size": "m", "scene": "blue"}
+ ]
+}
