@@ -1,0 +1,53 @@
+{
+ "handle": "theinnercommunity",
+ "style": "premium-minimal",
+ "hook_type": "question",
+ "theme": "self-trust: broken promises to yourself",
+ "experiment": "After the 2026-11-26 flop (reach 1, views 4, zero engagement; eight carousels all at zero non-follower reach): new hook type (question instead of statement) and new theme (self-trust / promises), CTA changed to save-and-open-in-thirty-days (a reason to save), hashtag set rotated and cut to 6 (fewer, mid-size niche tags). Photo style, 7 slides and ~22:00 IST unchanged.",
+ "slides": [
+  {
+   "text": "When did you stop keeping promises to [[yourself]]?",
+   "image": "11-crane-hook",
+   "key": "italic",
+   "size": "l"
+  },
+  {
+   "text": "Every ignored alarm teaches you your word is [[cheap]].",
+   "image": "12-cafe-silhouette",
+   "key": "italic",
+   "size": "m"
+  },
+  {
+   "text": "Nobody is checking. That is the [[test]].",
+   "image": "01-office-window",
+   "key": "sans",
+   "size": "l"
+  },
+  {
+   "text": "Everything you want is [[paid]] for in kept promises.",
+   "image": "03-gym-rack",
+   "key": "italic",
+   "size": "m"
+  },
+  {
+   "text": "Trust is rebuilt one small [[link]] at a time.",
+   "image": "10-alley-bag",
+   "key": "italic",
+   "size": "l",
+   "pos": "bottom"
+  },
+  {
+   "text": "Keep it when you are tired. Especially [[then]].",
+   "image": "04-deadlift",
+   "key": "roman",
+   "size": "m"
+  },
+  {
+   "text": "Make one promise today. [[Save]] this and come back in thirty days.",
+   "image": "14-night-laptop",
+   "key": "sans",
+   "size": "l",
+   "scene": "blue"
+  }
+ ]
+}
