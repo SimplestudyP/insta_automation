@@ -1,0 +1,52 @@
+{
+ "handle": "theinnercommunity",
+ "style": "premium-minimal",
+ "hook_type": "mirror-confession",
+ "theme": "screen time reveals what you really want",
+ "experiment": "After the 2026-11-27 flop (nine carousels all at reach 1-2, zero engagement): new hook type (mirror/confession instead of question) and theme, concrete measurable CTA (cut one hour of scrolling, save as proof), hashtag set rotated to a new combination. Photo style, 7 slides and ~22:00 IST unchanged.",
+ "slides": [
+  {
+   "text": "Your screen time is your [[confession]].",
+   "image": "02-bed-laptop",
+   "key": "italic",
+   "size": "xl"
+  },
+  {
+   "text": "Every hour is a [[purchase]]. Check your receipts.",
+   "image": "01-office-window",
+   "key": "italic",
+   "size": "m"
+  },
+  {
+   "text": "You are not stuck. You are [[settled]].",
+   "image": "11-crane-hook",
+   "key": "box",
+   "size": "m"
+  },
+  {
+   "text": "Strength is the same load, carried [[daily]].",
+   "image": "08-heavy-sack",
+   "key": "sans",
+   "size": "l"
+  },
+  {
+   "text": "Delete one [[distraction]]. Replace it with one rep.",
+   "image": "07-carrying-beam",
+   "key": "italic",
+   "size": "s"
+  },
+  {
+   "text": "Small [[cuts]], repeated, shape everything.",
+   "image": "13-saw-dust",
+   "key": "roman",
+   "size": "l"
+  },
+  {
+   "text": "Decide now. Cut one scroll hour. [[Save]] this as your proof.",
+   "image": "09-need-a-job",
+   "key": "sans",
+   "size": "m",
+   "scene": "blue"
+  }
+ ]
+}
